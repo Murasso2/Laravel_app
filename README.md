@@ -14,7 +14,7 @@ This project is a Dockerized setup for a Laravel application using Docker Compos
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/your-project.git
+    git clone git@github.com:Murasso2/Laravel_template.git your-project
     cd your-project
     ```
 
