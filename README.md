@@ -62,9 +62,21 @@ This project is a Dockerized setup for a Laravel application using Docker Compos
     docker-compose exec app php artisan migrate
     ```
 
+
 ## Usage
 
 Now that the project is set up, you can access your Laravel application at [http://localhost](http://localhost). Make sure your Docker containers are running:
 
 ```bash
 docker-compose ps
+
+9. Run Laravel migrations:
+
+    ```bash
+    docker-compose exec app composer require laravel/breeze --dev
+    ```
+10. Run Laravel migrations:
+
+    ```bash
+    docker-compose exec app php artisan breeze:install
+    ```
