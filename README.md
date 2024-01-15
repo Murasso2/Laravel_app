@@ -21,19 +21,19 @@ This project is a Dockerized setup for a Laravel application using Docker Compos
 2. Run the following command to start the Docker containers:
 
     ```bash
-    docker-compose up -d
+    docker compose up -d
     ```
 
 3. Build the Laravel application:
 
     ```bash
-    docker-compose build app
+    docker compose build app
     ```
 
 4. Access the MySQL database using the following command:
 
     ```bash
-    docker-compose exec db mysql -u root -p
+    docker compose exec db mysql -u root -p
     ```
 
    - Enter the password when prompted. (By default, it's set to `rootpassword`)
@@ -41,13 +41,13 @@ This project is a Dockerized setup for a Laravel application using Docker Compos
 5. Inside the Laravel application container, create a new Laravel project:
 
     ```bash
-    docker-compose exec app composer create-project laravel/laravel .
+    docker compose exec app composer create-project laravel/laravel .
     ```
 
 6. Rebuild the Docker image for the Laravel application:
 
     ```bash
-    docker-compose build app
+    docker compose build app
     ```
 
 7. Adjust ownership of project files:
@@ -59,7 +59,7 @@ This project is a Dockerized setup for a Laravel application using Docker Compos
 8. Run Laravel migrations:
 
     ```bash
-    docker-compose exec app php artisan migrate
+    docker compose exec app php artisan migrate
     ```
 
 
@@ -68,15 +68,15 @@ This project is a Dockerized setup for a Laravel application using Docker Compos
 Now that the project is set up, you can access your Laravel application at [http://localhost](http://localhost). Make sure your Docker containers are running:
 
 ```bash
-docker-compose ps
+docker compose ps
 
 9. Run Laravel migrations:
 
     ```bash
-    docker-compose exec app composer require laravel/breeze --dev
+    docker compose exec app composer require laravel/breeze --dev
     ```
 10. Run Laravel migrations:
 
     ```bash
-    docker-compose exec app php artisan breeze:install
+    docker compose exec app php artisan breeze:install
     ```
