@@ -56,7 +56,17 @@ This project is a Dockerized setup for a Laravel application using Docker Compos
     sudo chown -R $USER:$USER .
     ```
 
-8. Run Laravel migrations:
+8. Make changes to your .env file
+     ```bash
+    DB_HOST=db
+    DB_PORT=3306
+    DB_DATABASE=laravel_db
+    DB_USERNAME=root
+    DB_PASSWORD=rootpassword
+    DB_CONNECTION=mysql
+    ``` 
+
+9. Run Laravel migrations:
 
     ```bash
     docker compose exec app php artisan migrate
