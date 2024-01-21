@@ -41,7 +41,7 @@ This project is a Dockerized setup for a Laravel application using Docker Compos
 5. Inside the Laravel application container, create a new Laravel project:
 
     ```bash
-    docker compose exec app composer create-project laravel/laravel .
+    docker compose exec app composer create-project "laravel/laravel=10.*" .
     ```
 
 6. Rebuild the Docker image for the Laravel application:
