@@ -79,7 +79,7 @@ Now that the project is set up, you can access your Laravel application at [http
 
 ```bash
 docker compose ps
-
+---
 9. Run Laravel migrations:
 
     ```bash
