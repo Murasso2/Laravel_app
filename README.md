@@ -79,7 +79,7 @@ This project is a Dockerized setup for a Laravel application using Docker Compos
 10. Now that the project is set up, you can access your Laravel application at [http://localhost](http://localhost). Make sure your Docker containers are running:
     ```bash
     docker compose ps
-    ---
+    ```
 11. Run Laravel migrations:
 
     ```bash
